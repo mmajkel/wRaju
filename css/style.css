@@ -1,0 +1,181 @@
+/* Fonts  */
+@font-face {
+  font-family: 'CabinSketch';
+  src: url('CabinSketch-latins.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'Megrim';
+  src: url('Megrim.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+/* basic conf */
+body, html {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+.test{
+	background-color: yellow;
+}
+a:visited{
+	color: #000;
+}
+a:link{
+	color: #000;
+}
+.header{
+	height: 70px;
+	font-family: 'Megrim', 'cursive';
+	text-align: center;
+	font-size: 30px;
+	padding-top: 30px;
+	background-color: #eee;
+}
+
+/* background images/colors */
+
+#news, #reservations, #aboutUs{
+	position: relative;
+	/*opacity: 0.65;*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 20;
+}
+#news{
+	/*background-image: url(../img/news.jpg);*/
+	min-height: 500px;
+	background-color: #eee;
+}
+#reservations{
+	background-image: url(../img/reservations.jpg);
+	min-height: 500px;
+}
+#aboutUs{
+	/*background-image: url(../img/aboutUs.jpg);*/
+	background-color: #eee;
+	min-height: 500px;
+}
+
+/* Navigation bar */
+
+nav{
+	position: fixed;
+	width:100%;
+	padding: 0 5px;
+	background-color: #fff;
+	z-index: 100;
+}
+.navbar{
+	width:20%;
+	margin: 12px 1% 5px 1%;
+	padding: 5px 15px 5px 15px;
+	float: left;
+	text-align: center;
+	transition: 0.3s;
+	font-size: 30px;
+	font-family: 'Megrim', cursive;
+	letter-spacing: 0px;
+	max-height: 70px;
+/*	border: 1px dotted red;*/
+}
+.navbar img{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+#logoBar{
+	padding: 0;
+	margin: 0;
+}
+.navbar:hover{
+	cursor: pointer;
+	transition: 0.3s;
+	font-family: 'CabinSketch', cursive;
+	color: red;
+}
+
+/* Main content*/
+	/* 3 sections config */
+section{
+	/*border:1px solid black;*/
+	padding: 80px 0 0 20px;
+   /* text-align: justify;*/
+}
+	/*articles section*/
+.newsImages{
+	margin: 30px 20px 70px 20px;
+	width: 45%;
+	/*border: 1px solid red;*/
+	float: left;
+	text-align: center;
+	transition: 0.5;
+}
+.newsImages img{
+	width:90%;
+	max-height: 280px;
+	padding: auto;
+	margin: 20px;
+	
+	
+}
+.newsImages:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+	/*reservations section*/
+
+
+	/*teachers section*/
+#aboutUs{
+
+	padding: 0 0 50px 0;
+	font-family: 'Megrim', cursive;
+	font-size: 30px;
+}
+.profilePhoto{
+	margin: 0px 70px 70px 70px;
+	width: 39%;
+	/*border: 1px solid red;*/
+	float: left;
+	text-align: center;
+	transition: 0.5;
+	font-family: 'Lato', sans-serif;
+}
+.profilePhoto img{
+	width:400px;
+	height: 400px;
+	padding: auto;
+	border-radius: 100%;
+	transition: 0.3s;
+}
+.profilePhoto img:hover{
+	/*opacity: 0.25;*/
+	transition: 0.3s;
+}
+
+.details{
+	max-width: 350px;
+    position: absolute;
+    top: 50%;
+	transform: translate(-50%, -50%);
+    font-size: 18px;
+	width: 40%;
+}
+#a{
+	display: none;
+	left: 24.5%;
+}
+#w{
+	display: none;
+	left: 73.5%;
+}
+
+/* footer */
+footer{
+	background-color: #444;
+	
+}
